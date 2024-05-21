@@ -181,6 +181,29 @@ p {
     align-items: center;
 }
 
+.small-icon-container {
+    max-width: 40px;
+    height: 40px;
+    width: 100%;
+    border-radius: 100%;
+    background: #f3f3f3;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bxl-youtube {
+    color: #ff0000;
+}
+
+.bxl-facebook {
+    color: #3180c8;
+}
+
+.bxl-instagram {
+    color: #ff6262;
+}
+
 /* Media  */
 .media {
     display: flex;
@@ -220,6 +243,9 @@ p {
 }
 
 /* About-us */
+
+.about {
+}
 
 .about-us {
     display: flex;
@@ -460,6 +486,7 @@ p {
 .programs-card__title {
     margin: 0;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .programs-card__author,
@@ -516,7 +543,7 @@ p {
 .pricing-card {
     max-width: 350px;
     width: 100%;
-    height: 660px;
+    height: 700px;
     border-radius: 35px;
     box-shadow: 0 0 35px 0 #7090b033;
     position: relative;
@@ -630,6 +657,7 @@ p {
     gap: 1rem;
     max-width: 1140px;
     width: 100%;
+    margin: 10rem auto;
 }
 
 .callout__heading {
@@ -737,11 +765,14 @@ p {
 
 .nav {
     background: var(--color-primary);
+    padding: 0 1rem;
+}
+
+.nav__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 1rem;
 }
 
 .nav__list {
@@ -776,9 +807,9 @@ p {
 }
 
 .nav__button-container {
-    width: 100%;
     text-align: center;
     padding: 1.7rem 0;
+    width: 100%;
 }
 
 .container {
@@ -816,10 +847,9 @@ p {
     }
 
     .nav__list {
-        width: auto;
         display: flex;
         font-size: 1.8rem;
-        margin: 0;
+        width: auto;
     }
 
     .nav__list .list__item {
@@ -843,6 +873,9 @@ p {
     .nav .collapsible__content {
         opacity: 1;
         max-height: 100%;
+    }
+
+    .nav__logo {
     }
 }
 
@@ -879,7 +912,6 @@ p {
 
 .hero {
     background: var(--color-primary);
-    padding: 10rem 0;
 }
 
 .hero__header,
@@ -926,6 +958,9 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        padding: 5rem 0;
+    }
     .hero__welcome {
         font-size: 1.4rem;
         font-weight: 400;
@@ -999,6 +1034,7 @@ p {
 /* Programs section */
 
 .programs {
+    margin-top: 5rem;
     padding: 6rem 2rem;
 }
 
@@ -1148,9 +1184,10 @@ p {
 /* Pricing */
 
 .pricing {
-    padding: 6rem 2rem;
+    margin-top: 10rem;
+    padding: 10rem 2rem;
     background: var(--color-primary);
-    background: linear-gradient(to bottom, rgb(9, 32, 63) 26%, #fff 0);
+    background: linear-gradient(to bottom, rgb(9, 32, 63) 83%, #fff 0);
 }
 
 .pricing__header {
@@ -1179,17 +1216,118 @@ p {
 
 @media screen and (min-width: 768px) {
     .pricing {
-        background: linear-gradient(to bottom, rgb(9, 32, 63) 60%, #fff 0);
+        background: linear-gradient(to bottom, rgb(9, 32, 63) 58%, #fff 0);
     }
 }
 
 /* About */
 .about {
     padding: 6rem 2rem;
+    margin-top: 5rem;
 }
 
 /* Medias */
 .medias {
     margin-top: 6rem;
     gap: 4rem;
+}
+
+/* Footer */
+
+.footer {
+    padding: 4rem 2rem;
+    border-top: 1px solid #444;
+}
+
+.footer .grid {
+    row-gap: 4rem;
+}
+
+.small-icon-container:nth-of-type(2),
+.small-icon-container:nth-of-type(3) {
+    margin-left: 1rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.bx {
+    margin: 0 2rem;
+}
+
+.footer__logo {
+    margin-top: 2rem;
+}
+
+.rights {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    color: #222;
+}
+
+.footer__list a {
+    font-size: 1.7rem;
+    color: #222;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.footer__list a:hover,
+.footer__list a:focus {
+    color: #000;
+}
+
+.footer__list .list__item {
+    margin: 0.5rem 0;
+}
+
+.footer__list {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.footer__description {
+    line-height: 1.7;
+    color: #222;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer__heading {
+    font-size: 1.7rem;
+    color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+    .footer__content {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
+        justify-items: start;
+    }
+
+    .footer__heading {
+        font-size: 1.8rem;
+    }
+
+    .footer__list a {
+        font-size: 1.8rem;
+    }
+
+    .footer__description {
+        font-size: 1.5rem;
+    }
+
+    .footer__section:nth-of-type(2),
+    .footer__section:nth-of-type(3),
+    .footer__section:nth-of-type(4) {
+        margin-left: 5rem;
+    }
+
+    .rights {
+        font-size: 1.4rem;
+    }
 }

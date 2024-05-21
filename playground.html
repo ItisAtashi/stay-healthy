@@ -3,7 +3,587 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <title>Playground</title>
     </head>
-    <body></body>
+    <body>
+        <!-- Navigation -->
+        <header>
+            <nav class="nav collapsible">
+                <div class="container nav__content">
+                    <a href="/" class="nav__logo">
+                        <img src="svg/white-logo.svg" alt="" />
+                    </a>
+                    <img class="nav__toggler" src="/svg/menu.svg" alt="" />
+                    <ul class="list nav__list collapsible__content">
+                        <li class="list__item active"><a href="#">Home</a></li>
+                        <li class="list__item"><a href="#">Program</a></li>
+                        <li class="list__item"><a href="#">Nutritions</a></li>
+                        <li class="list__item"><a href="#">Pricing</a></li>
+                        <li class="list__item"><a href="#">About</a></li>
+                    </ul>
+                    <div class="nav__button-container collapsible__content">
+                        <a href="" class="btn btn--primary nav--button"
+                            >Join Now</a
+                        >
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="container">
+                <header class="hero__header">
+                    <span class="hero__welcome">WELCOME TO THE CLUB</span>
+                    <h1 class="hero__title">
+                        Choose Your Programs, Pick Your Meal, Let’s Get Healthy.
+                    </h1>
+                </header>
+                <div class="hero__content">
+                    <p class="hero__description">
+                        StayHealthy provides Online Training, and Consultation
+                        About Diet and Exercise tailored based on user needs. We
+                        will provide a training model that can be accessed
+                        anytime and anywhere with the best trainers.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#" class="btn btn--primary hero__btn-join"
+                            >Join Now</a
+                        >
+                        <a href="#" class="btn btn--secondary hero__btn-contact"
+                            >Contact Us</a
+                        >
+                    </div>
+                </div>
+                <div class="video-section">
+                    <div class="video-container">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/n69-eVLtevc?si=cmEF3ygs9UvnDGEn"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs section -->
+        <section class="container programs">
+            <header class="programs__header">
+                <span class="programs__label">PROGRAMS</span>
+                <h2 class="programs__title">
+                    We Have a programs to help
+                    <span class="programs__title--break"> your workouts</span>
+                </h2>
+            </header>
+            <div class="grid grid--1x3 program-cards">
+                <article class="programs-card">
+                    <img
+                        src="/images/programs-one.png"
+                        alt=""
+                        class="programs-card__image"
+                    />
+                    <div class="programs-card__content">
+                        <h3 class="programs-card__title">Full Body Workout</h3>
+                        <span class="programs-card__author"
+                            >By Timi Tarner</span
+                        >
+                        <p class="programs-card__description">
+                            No need equipments, just your body, your soul, and
+                            your spirit. You can do . . .
+                        </p>
+                        <a href="#" class="programs-card__link"
+                            >Check out this program!
+                        </a>
+                    </div>
+                </article>
+                <article class="programs-card">
+                    <img
+                        src="/images/programs-two.png"
+                        alt=""
+                        class="programs-card__image"
+                    />
+                    <div class="programs-card__content">
+                        <h3 class="programs-card__title">Bodyweight Workout</h3>
+                        <span class="programs-card__author">By Frank Jane</span>
+                        <p class="programs-card__description">
+                            No need equipments, just your body, your soul, and
+                            your spirit. You can do . . .
+                        </p>
+                        <a href="#" class="programs-card__link"
+                            >Check out this program!
+                        </a>
+                    </div>
+                </article>
+                <article class="programs-card">
+                    <img
+                        src="/images/programs-three.png"
+                        alt=""
+                        class="programs-card__image"
+                    />
+                    <div class="programs-card__content">
+                        <h3 class="programs-card__title">Dumbell Workout</h3>
+                        <span class="programs-card__author">By The Rock</span>
+                        <p class="programs-card__description">
+                            This is a workout you can do at home just using a
+                            set of barbells. The workout is . . .
+                        </p>
+                        <a href="#" class="programs-card__link"
+                            >Check out this program!
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Nutrition block -->
+        <!-- Nutrition part-->
+        <div class="nutrition container">
+            <div class="grid grid--1x2">
+                <div class="nutrition__images">
+                    <div class="nutrition__image-container1">
+                        <img
+                            class="discipline"
+                            src="/svg/Discipline.svg"
+                            alt=""
+                        />
+                        <img
+                            class="nutrition__image-one"
+                            src="/images/nutritious-img-one.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="nutrition__image-container2">
+                        <img
+                            class="nutrition__image-two"
+                            src="/images/nutritious-img-two.png"
+                            alt=""
+                        />
+                        <img
+                            class="eating-healthy"
+                            src="/svg/eating-healthy.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="nutrition__content">
+                    <span class="nutrition__label">Nutritions</span>
+                    <h2 class="nutrition__title">
+                        meal preparation for
+                        <span class="nutrition__title--break">workout</span>
+                    </h2>
+                    <p class="nutrition__description">
+                        Don’t worry we have the best nutritionist for your
+                        workout, firstly consult with our experts, we can make
+                        your meal preparation based on
+                        <span class="bold">
+                            Total Daily Energy Expenditure.
+                        </span>
+                    </p>
+                    <a href="#" class="btn btn--primary">Join Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing block -->
+        <section class="pricing">
+            <div class="container">
+                <header class="pricing__header">
+                    <span class="pricing__label">Pricing</span>
+                    <h2 class="pricing__title">
+                        CHOOSE YOUR PACKAGE
+                        <span class="pricing__title--break">FOR WORKOUT</span>
+                    </h2>
+                </header>
+                <div class="grid grid--1x3 pricing__cards">
+                    <div class="plan">
+                        <div class="pricing-card">
+                            <div class="pricing-card__header">
+                                <h3 class="pricing-card__title">Basic</h3>
+                                <img
+                                    src="/images/pricing-img-one.png"
+                                    alt=""
+                                    class="pricing-card__image"
+                                />
+                            </div>
+                            <div class="pricing-card__content">
+                                <span class="pricing-card__trainer"
+                                    >The Rock</span
+                                >
+                                <ul class="list list--tick">
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            3 Times A Week
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">Full Zoom</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">PDF Module</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            Meal Preparation
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="pricing-card__footer">
+                                <span class="pricing-card__price"
+                                    >Rp500.000</span
+                                >
+                                <span class="pricing-card__billing-cycle"
+                                    >/month</span
+                                >
+                                <a href="#" class="btn btn--primary"
+                                    >Workout Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan plan--popular">
+                        <div class="pricing-card">
+                            <div class="pricing-card__header">
+                                <h3 class="pricing-card__title">Standart</h3>
+                                <img
+                                    src="/images/pricing-img-two.png"
+                                    alt=""
+                                    class="pricing-card__image"
+                                />
+                            </div>
+                            <div class="pricing-card__content">
+                                <span class="pricing-card__trainer"
+                                    >Anna Jane</span
+                                >
+                                <ul class="list list--tick">
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            3 Times A Week
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">Full Zoom</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">PDF Module</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            Meal Preparation
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">Suplement</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="pricing-card__footer">
+                                <span class="pricing-card__price"
+                                    >Rp1.000.000</span
+                                >
+                                <span class="pricing-card__billing-cycle"
+                                    >/month</span
+                                >
+                                <a href="#" class="btn btn--primary"
+                                    >Workout Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan">
+                        <div class="pricing-card">
+                            <div class="pricing-card__header">
+                                <h3 class="pricing-card__title">Premium</h3>
+                                <img
+                                    src="/images/pricing-img-three.png"
+                                    alt=""
+                                    class="pricing-card__image"
+                                />
+                            </div>
+                            <div class="pricing-card__content">
+                                <span class="pricing-card__trainer"
+                                    >The Rock</span
+                                >
+                                <ul class="list list--tick">
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            3 Times A Week
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">Full Zoom</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">PDF Module</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            Meal Preparation
+                                        </li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">Suplement</li>
+                                    </div>
+                                    <div>
+                                        <span class="tick"></span>
+                                        <li class="list__item">
+                                            Gym Equipment
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="pricing-card__footer">
+                                <span class="pricing-card__price"
+                                    >Rp2.000.000</span
+                                >
+                                <span class="pricing-card__billing-cycle"
+                                    >/month</span
+                                >
+                                <a href="#" class="btn btn--primary"
+                                    >Workout Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us block -->
+        <section class="container about">
+            <div class="about-us">
+                <img
+                    class="about__quote about__quote-opening"
+                    src="/svg/opening-quote.svg"
+                    alt="Opening Quote"
+                />
+                <div class="about__content">
+                    <span class="about__label">About Us</span>
+                    <h2 class="about__heading">
+                        Benefits of Joining <br />
+                        with Us
+                    </h2>
+                </div>
+                <img
+                    class="about__quote about__quote-closing"
+                    src="/svg/closing-quote.svg"
+                    alt="Closing Quote"
+                />
+            </div>
+
+            <div class="statistics">
+                <div class="statistics__item">
+                    <span class="statistics__number">5+</span>
+                    <p class="statistics__description">Years Of Journey</p>
+                </div>
+                <div class="statistics__item">
+                    <span class="statistics__number">500+</span>
+                    <p class="statistics__description">Happy Clients</p>
+                </div>
+                <div class="statistics__item">
+                    <span class="statistics__number">400+</span>
+                    <p class="statistics__description">Dedicated Members</p>
+                </div>
+            </div>
+
+            <div class="grid grid--1x2 medias">
+                <div class="media">
+                    <div class="icon-container">
+                        <img class="media__image" src="/svg/timer.svg" alt="" />
+                    </div>
+                    <div class="media__content">
+                        <h3 class="media__heading">flexible class</h3>
+                        <p class="media__description">
+                            you can adapt the class to your busy life very
+                            easily Workout everytime and everywhere.
+                        </p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="icon-container">
+                        <img
+                            class="media__image"
+                            src="/svg/dumbell.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="media__content">
+                        <h3 class="media__heading">Gym Equipment</h3>
+                        <p class="media__description">
+                            Our trainers is very profesional, very motivated and
+                            funny.
+                        </p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="icon-container">
+                        <img
+                            class="media__image"
+                            src="/svg/clipboard.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="media__content">
+                        <h3 class="media__heading">Track Progress</h3>
+                        <p class="media__description">
+                            See your Progress and workout features for tracking
+                            your healthy.
+                        </p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="icon-container">
+                        <img
+                            class="media__image"
+                            src="/svg/desktop.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="media__content">
+                        <h3 class="media__heading">Meet New Friends</h3>
+                        <p class="media__description">
+                            we have the big classes in the online workout, you
+                            can meet our new member for sharing and chill out.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Callout -->
+        <div class="callout">
+            <div class="callout__content">
+                <div class="callout__form">
+                    <h2 class="callout__heading">
+                        Become a member of this workout class
+                    </h2>
+                    <div class="callout__controls">
+                        <input
+                            type="email"
+                            class="callout__input"
+                            placeholder="Email Address"
+                        />
+                        <a class="btn btn--primary callout__button">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="callout__images">
+                <img
+                    class="callout__image"
+                    src="/images/callout-img-one.png"
+                    alt=""
+                />
+                <img
+                    class="callout__image"
+                    src="/images/callout-img-two.png"
+                    alt=""
+                />
+                <img
+                    class="callout__image"
+                    src="/images/callout-img-three.png"
+                    alt=""
+                />
+                <img
+                    class="callout__image"
+                    src="/images/callout-img-four.png"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="container footer">
+            <div class="grid footer__content">
+                <div class="footer__section">
+                    <img class="footer__logo" src="/svg/logo.svg" alt="" />
+                    <p class="footer__description">
+                        Online Training, and Consultation About Diet and
+                        Exercise tailored based on user needs.
+                    </p>
+                    <div class="icons">
+                        <div class="small-icon-container">
+                            <i class="bx bxl-youtube"></i>
+                        </div>
+                        <div class="small-icon-container">
+                            <i class="bx bxl-facebook"></i>
+                        </div>
+                        <div class="small-icon-container">
+                            <i class="bx bxl-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__heading">Product</h3>
+                    <ul class="list footer__list">
+                        <li class="list__item">
+                            <a href="#">Gym Equipment</a>
+                        </li>
+                        <li class="list__item"><a href="#">Suplement</a></li>
+                        <li class="list__item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__heading">Explore Us</h3>
+                    <ul class="list footer__list">
+                        <li class="list__item">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">Term and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__heading">Contact</h3>
+                    <ul class="list footer__list">
+                        <li class="list__item">
+                            <a href="#">hi@stayhealthy.com</a>
+                        </li>
+                        <li class="list__item"><a href="#">021-123-636</a></li>
+                        <li class="list__item">
+                            <a href="#">stayhealthy.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="rights">© 2021 StayHealty. All rights reserved</span>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
